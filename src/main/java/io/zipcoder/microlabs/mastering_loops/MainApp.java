@@ -7,5 +7,9 @@ import java.util.Scanner;
  */
 public class MainApp {
     public static void main(String[] args) {
+       /* NumberUtilities n = new NumberUtilities();
+        String str = n.getSquareNumbers(2, 6, 2);
+        System.out.println(str);*/
+
     }
 }
