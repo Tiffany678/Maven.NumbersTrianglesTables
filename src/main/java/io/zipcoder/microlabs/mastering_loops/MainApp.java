@@ -7,8 +7,8 @@ import java.util.Scanner;
  */
 public class MainApp {
     public static void main(String[] args) {
-       /* NumberUtilities n = new NumberUtilities();
-        String str = n.getSquareNumbers(2, 6, 2);
+/*       TableUtilities n = new TableUtilities();
+        String str = n.getSmallMultiplicationTable();
         System.out.println(str);*/
 
     }

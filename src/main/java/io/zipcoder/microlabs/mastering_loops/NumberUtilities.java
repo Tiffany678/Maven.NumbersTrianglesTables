@@ -29,18 +29,6 @@ public class NumberUtilities {
         return result;
     }
 
-
-    public static String getSquareNumbers(int start, int stop, int step) {
-        String result="";
-        while(stop>start){
-            int square= (int)Math.pow(start,2);
-            String str = String.valueOf(square);
-            result+=str;
-            start+=step;
-        }
-        return result;
-    }
-
     public static String getRange(int stop) {
         String result="";
         for(int i=0; i<stop; i++){
@@ -62,13 +50,19 @@ public class NumberUtilities {
 
 
     public static String getRange(int start, int stop, int step) {
-        String result ="";
+       /* String result ="";
         while(stop>start){
             String str = String.valueOf(start);
             result+=str;
             start+=step;
         }
-        return result;
+        return result;*/
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=start; i<stop; i+=step){
+            sb.append(i);
+        }
+        return sb.toString();
     }
 
 
@@ -81,5 +75,16 @@ public class NumberUtilities {
             start+=step;
         }
         return result;
+    }
+    public static String getSquareNumbers(int start, int stop, int step) {
+        /*String result="";
+        while(stop>start){
+            int square= ((int)Math.pow(start,2));
+            String str = String.valueOf(square);
+            result+=str;
+            start+=step;
+        }
+        return result;*/
+        return getExponentiations(start, stop, step,2);
     }
 }
